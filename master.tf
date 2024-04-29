@@ -1,6 +1,6 @@
 provider "google" {
- credentials = file("~/Downloads/extended-web-421817-87165c463de5.json")
- project     = "extended-web-421817"
+ credentials = file("~/Downloads/filename.json")
+ project     = "<project-id>"
  region      = "us-central1-a"
 }
 
@@ -12,7 +12,7 @@ resource "google_container_cluster" "appcluster" {
     network  = "default"
     subnetwork = "default"
     networking_mode = "VPC_NATIVE"
-    project = "extended-web-421817"
+    project = "<project-id"
 
     node_locations = [
         "us-central1-b"
